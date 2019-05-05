@@ -1,0 +1,19 @@
+﻿/sethome = >>>
+        store_value(player() . 'asd', ploc())
+        msg('§6지정이 완료되었습니다.')
+<<<
+
+/home = >>>
+    @home = get_value(player() . 'asd')
+    if(@home == null){
+        msg('§chome이 지정되지 않았습니다!')
+    }
+    else {
+        set_ploc(@home)
+    }
+<<<
+
+/delhome =>>>
+	clear_value(player() . 'asd')
+	msg('§6삭제가 완료되었습니다')
+<<<
