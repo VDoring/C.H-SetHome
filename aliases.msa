@@ -1,12 +1,12 @@
 ﻿/sethome = >>>
-        store_value(player() . 'asd', ploc())
-        msg('§6지정이 완료되었습니다.')
+        store_value(player() . 'homeloc', ploc())
+        msg('§6Set Home!')
 <<<
 
 /home = >>>
-    @home = get_value(player() . 'asd')
+    @home = get_value(player() . 'homeloc')
     if(@home == null){
-        msg('§chome이 지정되지 않았습니다!')
+        msg('§cHome is not specified.')
     }
     else {
         set_ploc(@home)
@@ -14,6 +14,6 @@
 <<<
 
 /delhome =>>>
-	clear_value(player() . 'asd')
-	msg('§6삭제가 완료되었습니다')
+	clear_value(player() . 'homeloc')
+	msg('§6Delete Hoem Success!')
 <<<
